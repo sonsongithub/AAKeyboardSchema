@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nbL-EA-G0u">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="FVb-95-MqA">
+            <objects>
+                <viewController id="nbL-EA-G0u" customClass="ViewController" customModule="AAKeyboardSchemaSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5SI-yZ-Npu"/>
+                        <viewControllerLayoutGuide type="bottom" id="zx7-yd-IJV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HlR-JX-Dgr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkx-xV-h4J">
+                                <rect key="frame" x="272" y="235" width="57" height="30"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerAA:" destination="nbL-EA-G0u" eventType="touchUpInside" id="BfX-7Y-nBh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it9-Zv-BSo">
+                                <rect key="frame" x="254" y="285" width="92" height="30"/>
+                                <state key="normal" title="With callback">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="withCallback:" destination="nbL-EA-G0u" eventType="touchUpInside" id="qdc-vR-XsL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="it9-Zv-BSo" secondAttribute="centerX" id="ECV-rJ-T5o"/>
+                            <constraint firstAttribute="centerX" secondItem="gkx-xV-h4J" secondAttribute="centerX" id="IE2-hZ-wZU"/>
+                            <constraint firstAttribute="centerY" secondItem="it9-Zv-BSo" secondAttribute="centerY" id="Nwk-9u-VcE"/>
+                            <constraint firstAttribute="centerY" secondItem="gkx-xV-h4J" secondAttribute="centerY" constant="50" id="u1S-PK-luw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="snU-7A-LkK" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
